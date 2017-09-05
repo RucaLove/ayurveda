@@ -1,0 +1,79 @@
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="/hibiskiss" class="brand-logo">
+        <span>
+          <img class="logo-png animated flip" src="/images/logo.png"/>
+        </span>
+        <span class="logo-text animated flip">HibisKISS Yoga & Ayurveda | ॐ</span>
+      </a>
+
+      <span class="logo-text-only push left">HibisKISS Yoga & Ayurveda | ॐ</span>
+
+      <a class="button-collapse" data-activates="mobileNav">
+        <i class="material-icons">menu</i>
+      </a>
+
+      <!-- Dropdown Structure -->
+      <ul id="dropdown1" class="dropdown-content">
+        <li class="animated swing" id="nav-font"><a ui-sref="yoga">Path To Enlightenment</a></li>
+        <li class="divider"></li>
+        <li class="animated swing" id="nav-font"><a ui-sref="poses">Asana Library</a></li>
+        <li class="divider"></li>
+        <li class="animated swing" id="nav-font"><a ui-sref="schedule">Schedule</a></li>
+      </ul>
+
+      <ul id="dropdown2" class="dropdown-content">
+        <li class="animated swing" id="nav-font"><a ui-sref="ayurveda">The Science Of Life</a></li>
+        <li class="divider"></li>
+        <li class="animated swing" id="nav-font"><a ui-sref="quiz">Determine Your Vikriti</a></li>
+        <li class="divider"></li>
+        <li class="animated swing" id="nav-font"><a ui-sref="schedule">Workshops</a></li>
+      </ul>
+
+      <ul id="dropdown3" class="dropdown-content">
+        <li class="animated swing" id="nav-font"><a ui-sref="academy">Yoga</a></li>
+        <li class="divider"></li>
+        <li class="animated swing" id="nav-font"><a ui-sref="academy">Ayurveda</a></li>
+      </ul>
+
+      <ul id="dropdown4" class="dropdown-content">
+        <li class="animated swing" id="nav-font"><a ui-sref="login">Membership</a></li>
+        <li class="divider"></li>
+        <li class="animated swing" id="nav-font"><a ui-sref="newsletter">Newsletter</a></li>
+        <li class="divider"></li>
+        <li class="animated swing" id="nav-font"><a ui-sref="about">About</a></li>
+        <li class="divider"></li>
+        <li class="animated swing" id="nav-font"><a ui-sref="love">Good Samaritans</a></li>
+      </ul>
+
+      <div class="nav-wrapper">
+        <ul class="right hide-on-med-and-down">
+          <!-- Dropdown Trigger -->
+          <li><a class="dropdown-button animated rotateIn" data-activates="dropdown1">Yoga | योग<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-button animated rotateIn" data-activates="dropdown2">Ayurveda | आयुर्वेद<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-button animated rotateIn" data-activates="dropdown3">Online Learning<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-button animated rotateIn" data-activates="dropdown4">Connect<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="animated rotateIn"ui-sref="store">Shop</li>
+        </ul>
+      </div>
+
+      <ul id="mobileNav" class="side-nav">
+        <li><a class="animated swing" ui-sref="yoga">Yoga</a></li>
+        <li><a class="animated swing" ui-sref="ayurveda">Ayurveda</li>
+        <li><a class="animated swing" ui-sref="academy">Online Learning</li>
+        <li><a class="animated swing" ui-sref="newsletter">Connect</li>
+        <li><a class="animated swing" ui-sref="store">Shop</li>
+      </ul>
+    </div>
+  </nav>
+  <!-- <div class="container">
+    <div class="back"><img src="/images/flatirons.jpg"></div>
+  </div> -->
+</div>
+
+<script type="text/javascript">
+$( document ).ready(function(){
+  $(".dropdown-button").dropdown();
+})
+</script>

@@ -1,0 +1,45 @@
+    <main>
+      <div class="container center">
+        <h1 id="explanation">Shop HibisKISS</h1>
+      </div>
+
+      <div id="container" class="container store-front">
+        <div class="row">
+
+          <div class="col-xs-6 col-md-4" ng-repeat="item in $ctrl.items">
+            <a href="#" class="thumbnail">
+              <img src="{{item.img}}" alt="{{item.productName}}">
+            </a>
+            <p class="item-name">{{item.productName}}</p>
+            <p class="item-name">{{item.size}} | {{item.price}}</p>
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="LD6GQW4GZ2K32">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            <br>
+          </div>
+
+          <!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="WYPA3GJWGQ592">
+            <table>
+            <tr><td><input type="hidden" name="on0" value="Dosha">Dosha</td></tr><tr><td><select name="os0">
+            	<option value="Vata">Vata </option>
+            	<option value="Pitta">Pitta </option>
+            	<option value="Kapha">Kapha </option>
+            	<option value="Tridoshic">Tridoshic </option>
+            	<option value="Custom">Custom </option>
+            </select> </td></tr>
+            </table>
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form> -->
+        </div>
+      </div>
+      <div class="container">
+        <p class="center">*Applicable sales tax will be added to all orders*</p>
+      </div>
+
+    </main>

@@ -1,0 +1,65 @@
+<div class="container">
+<div class="row">
+<form id="loginForm" class="col s12">
+  <div class="card">
+    <div class="card-content center">
+      <span class="card-title">Student Log in</span>
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Email" id="email" type="text" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Password" id="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-action center">
+      <button class="btn-large" type="submit" name="action">
+        <i class="material-icons left">lock</i>
+        <a ui-sref="student" class="click">Log in</a>
+      </button>
+    </div>
+  </div>
+</form>
+</div>
+</div>
+
+<div class="container">
+<div class="center academy">
+<h6 class="academyFont">HibisKISS Academy Training Schedule (2018):</h6>
+<br>
+<div class="academy">200hr YTT Program $1,250.00 USD</div>
+<div class="academy">300hr YTT Program $1,500.00 USD</div>
+<div class="academy">Certified Ayurvedic Counselor $7,500.00 USD</div>
+<div class="academy">Certified Ayurvedic Practitioner $7,500.00 USD</div>
+<br>
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="8BSCSQQ2X4GAC">
+<table>
+<!-- <tr>
+  <td><input type="hidden" name="on0" value="Program Type"><h6 class="center">Program Type</h6></td>
+</tr> -->
+<!-- <tr>
+  <td><select name="os0">
+	<option value="200hr YTT Program">200hr YTT Program $1,250.00 USD</option>
+	<option value="300hr YTT Program">300hr YTT Program $1,500.00 USD</option>
+	<option value="Certified Ayurvedic Counselor">Certified Ayurvedic Counselor $7,500.00 USD</option>
+	<option value="Certified Ayurvedic Practitioner">Certified Ayurvedic Practitioner $7,500.00 USD</option>
+  </select></td>
+</tr> -->
+</table>
+<br>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+<br>
+</div>
+</div>

@@ -1,0 +1,56 @@
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m4">
+            <img id="cover">
+          </div>
+
+          <div id="pose" class="col s12 m8">
+            <h3 id="pose_name_english"></h3>
+
+            <h5>By <span id="author"></span></h5>
+
+            <p id="description" class="flow-text"></p>
+
+            <h6>Genre: <span id="genre"></span></h6>
+
+            <a id="addFavorite" class="waves-effect waves-light btn-large hide">
+              <i class="material-icons left">thumb_up</i>
+              Add Favorite
+            </a>
+
+            <a id="removeFavorite" class="waves-effect waves-light btn-large hide">
+              <i class="material-icons left">thumb_down</i>
+              Remove Favorite
+            </a>
+
+            <a id="editPose" class="waves-effect waves-light btn-large amber darken-3">
+              <i class="material-icons left">edit</i>
+              Edit
+            </a>
+
+            <a id="deletePose" class="waves-effect waves-light btn-large red">
+              <i class="material-icons left">delete</i>
+              Delete
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="deleteModal" class="modal">
+        <div class="modal-content">
+          <h4>Delete this pose?</h4>
+          <p>You won't be able to undo this operation.</p>
+        </div>
+
+        <div class="modal-footer">
+          <a id="confirmDelete" class="modal-action modal-close waves-effect waves-green btn-flat">
+            <strong>Delete</strong>
+          </a>
+
+          <a id="cancelDelete" class="modal-action modal-close waves-effect waves-red btn-flat">
+            Cancel
+          </a>
+        </div>
+      </div>
+    </main>

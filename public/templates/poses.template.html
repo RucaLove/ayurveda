@@ -1,0 +1,17 @@
+<div class="container center">
+  <h1 id="explanation">Asana (Postures) Library</h1>
+</div>
+<div id="container" class="store-front">
+    <div class="row">
+        <div class="col-xs-6 col-md-4" ng-repeat="item in $ctrl.items">
+            <a href="#" class="thumbnail">
+                <img src="{{item.poseImg}}" alt="{{item.poseNameEnglish}}">
+            </a>
+            <p class="poseName">{{item.poseNameSanskrit}} | {{item.poseNameEnglish}} | {{item.poseNameSanskritCharacters}}</p>
+            <p class="poseName">Catergory: {{item.category}}</p>
+            <p class="poseName">Difficuly level: {{item.difficultyLevel}}</p>
+            <p class="poseName">{{item.chakraSanskrit}} ({{item.chakraEnglish}}) CHAKRA</p>
+            <br>
+        </div>
+    </div>
+</div>
